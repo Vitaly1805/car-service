@@ -8,7 +8,4 @@ body {
 	}
 }
 
-.svg {
-	user-select: none;
-	pointer-events: none;
-}
+@import 'base/svg.scss';
