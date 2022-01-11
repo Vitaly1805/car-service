@@ -26,6 +26,176 @@
   font-weight: 400;
   font-style: normal;
 }
+.header {
+  height: 10vh;
+  padding: 12px 0;
+}
+.header__body {
+  display: flex;
+  flex-direction: column;
+}
+.header__top {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.header__logo {
+  color: #5858FA;
+  font-weight: 600;
+  font-size: 30px;
+  letter-spacing: 2px;
+}
+.header__logo-photo {
+  width: 85px;
+  height: 85px;
+}
+.header__main {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+.header__info {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  justify-content: space-between;
+  font-size: 12px;
+  padding: 5px 10px 5px 20px;
+  background: #5858FA;
+  color: #fff;
+  border-radius: 20px;
+}
+.header__order {
+  background: #08088A;
+  height: 30px;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.4s ease 0s;
+}
+.header__order:hover {
+  background: #0404B4;
+  transition: all 0.4s ease 0s;
+}
+.header__swiper {
+  height: 90vh;
+}
+.header__swiper img {
+  height: 100%;
+  width: 100%;
+}
+.header__swiper-button {
+  color: red;
+  background: red;
+}
+
+.menu {
+  font-size: 20px;
+  text-transform: uppercase;
+  transition: all 0.4s ease 0s;
+}
+.menu__item {
+  display: flex;
+  align-items: center;
+}
+.menu__item button {
+  margin: 4px 0 0 4px;
+}
+.menu__item:hover {
+  color: #848484;
+  transition: all 0.4s ease 0s;
+}
+.menu__list {
+  padding: 0 0 0 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  width: 80%;
+}
+.menu__body {
+  margin: 10px 0 0 0;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  min-width: 1170px;
+}
+
+body {
+  color: #ffffff;
+  line-height: 1;
+  font-family: "Times New Roman", Georgia, Serif;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+input,
+button,
+textarea {
+  font-family: "Times New Roman", Georgia, Serif;
+  font-size: inherit;
+}
+
+button {
+  cursor: pointer;
+  color: inherit;
+  background-color: inherit;
+}
+
+a {
+  color: inherit;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
 body {
   font-family: CormorantUpright;
   font-size: 50px;

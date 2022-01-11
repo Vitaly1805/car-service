@@ -1,4 +1,12 @@
 @import "fonts";
+@import "header.scss";
+
+$minWidth: 1170;
+$fontFamily: "Times New Roman", Georgia, Serif;
+$fontSize: 14px;
+$mainColor: #ffffff;
+
+@import "base/null.scss";
 
 body {
 	font-family: CormorantUpright;
