@@ -1,18 +1,18 @@
 @import "fonts";
 @import "header.scss";
 
-$minWidth: 1170;
+$widthContainer: 1170;
 $fontFamily: "Times New Roman", Georgia, Serif;
 $fontSize: 14px;
-$mainColor: #ffffff;
+$mainColor: #000000;
 
 @import "base/null.scss";
 
 body {
-	font-family: CormorantUpright;
-	font-size: 50px;
-	span {
-		color: red;
+
+	._container {
+		max-width: $widthContainer + px;
+		margin: 0 auto;
 	}
 }
 

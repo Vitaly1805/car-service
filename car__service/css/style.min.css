@@ -93,9 +93,28 @@
   color: red;
   background: red;
 }
+.header .svg-icon {
+  width: 13px;
+  height: 13px;
+}
+.header .svg-phone {
+  width: 10px;
+  height: 10px;
+}
+.header .svg-clock {
+  width: 10px;
+  height: 10px;
+}
+.header__svg {
+  display: flex;
+  align-items: center;
+}
+.header__svg .svg-icon {
+  margin: 0 3px 0 0;
+}
 
 .menu {
-  font-size: 20px;
+  font-size: 19px;
   text-transform: uppercase;
   transition: all 0.4s ease 0s;
 }
@@ -104,7 +123,7 @@
   align-items: center;
 }
 .menu__item button {
-  margin: 4px 0 0 4px;
+  margin: 0 0 0 4px;
 }
 .menu__item:hover {
   color: #848484;
@@ -137,11 +156,10 @@
 html,
 body {
   height: 100%;
-  min-width: 1170px;
 }
 
 body {
-  color: #ffffff;
+  color: #000000;
   line-height: 1;
   font-family: "Times New Roman", Georgia, Serif;
   font-size: 14px;
@@ -196,15 +214,12 @@ h6 {
   font-size: inherit;
 }
 
-body {
-  font-family: CormorantUpright;
-  font-size: 50px;
-}
-body span {
-  color: red;
+body ._container {
+  max-width: 1170px;
+  margin: 0 auto;
 }
 
-.svg {
-  user-select: none;
-  pointer-events: none;
+.svg-icon {
+  width: 20px;
+  height: 20px;
 }
