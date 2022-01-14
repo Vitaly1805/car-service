@@ -16,33 +16,48 @@
 					<img src="img/logo.png" class="header__logo-photo" alt=""> 
 				</div>
 				<div class="header__main">
-					<div class="header__info">
-						<div class="header__address">
-							<a href="#" class="header__svg">
-								<svg class="svg-icon">
-									<use xlink:href="img/icons/icons.svg#map"></use>
+					<div class="header__main-top">
+						<div class="header__info">
+							<div class="header__address">
+								<a href="#" class="header__svg">
+									<svg class="svg-icon">
+										<use xlink:href="img/icons/icons.svg#map"></use>
+									</svg>
+								Ухта, Юбилейная д.18
+								</a>
+							</div>
+							<div class="header__time">
+								<span  class="header__svg">
+									<svg class="svg-icon svg-clock">
+										<use xlink:href="img/icons/icons.svg#clock"></use>
+									</svg>
+									09:00 - 21:00
+								</span>
+							</div>
+							<div class="header__phone">
+								<a href="tel:88005553535" class="header__svg">
+									<svg class="svg-icon svg-phone">
+										<use xlink:href="img/icons/icons.svg#phone"></use>
+									</svg>
+									8 (800) 555-35-35
+								</a>
+							</div>
+							<div class="header__order">
+								Заказать звонок
+							</div>
+						</div>
+						<div class="header__icons">
+							<a href="">
+								<svg class="svg-icon header__icon">
+									<use xlink:href="img/icons/icons.svg#user"></use>
 								</svg>
-							   Ухта, Юбилейная д.18
 							</a>
-						</div>
-						<div class="header__time">
-							<span  class="header__svg">
-								<svg class="svg-icon svg-clock">
-									<use xlink:href="img/icons/icons.svg#clock"></use>
+							<a href="" class="header__cart">
+								<svg class="svg-icon header__icon">
+									<use xlink:href="img/icons/icons.svg#cart"></use>
 								</svg>
-								09:00 - 21:00
-							</span>
-						</div>
-						<div class="header__phone">
-							<a href="tel:88005553535" class="header__svg">
-								<svg class="svg-icon svg-phone">
-									<use xlink:href="img/icons/icons.svg#phone"></use>
-								</svg>
-								8 (800) 555-35-35
+								<span>1</span>
 							</a>
-						</div>
-						<div class="header__order">
-							Заказать звонок
 						</div>
 					</div>
 					<div class="header__menu menu">
@@ -51,9 +66,12 @@
 								<li class="menu__item">
 									<a href="" class="menu__link">Услуги</a>
 									<button data-spoller type="button" class="menu__arrow _icon-arrow-down">
-										<img src="img/icons/icons.svg#arrow-bottom" width="20px" height="20px" class="menu__arrow-img" alt="">
+										<svg class="svg-icon menu__arrow-svg">
+											<use xlink:href="img/icons/icons.svg#arrow-bottom"></use>
+										</svg>
+										<!-- <img src="img/icons/icons.svg#arrow-bottom" class="menu__arrow-svg" alt=""> -->
 									</button>
-									<!-- <ul class="menu__sub-list">
+									<ul class="menu__sub-list">
 										<li class="menu__sub-item">
 											<a href="" class="menu__sub-link">Item1</a>
 										</li>
@@ -69,13 +87,36 @@
 										<li class="menu__sub-item">
 											<a href="" class="menu__sub-link">Item5</a>
 										</li>
-									</ul> -->
+									</ul>
 								</li>
 								<li class="menu__item">
 									<a href="" class="menu__link">Марки</a>
 								</li>
 								<li class="menu__item">
 									<a href="" class="menu__link">Запчасти</a>
+									<button data-spoller type="button" class="menu__arrow _icon-arrow-down">
+										<svg class="svg-icon menu__arrow-svg">
+											<use xlink:href="img/icons/icons.svg#arrow-bottom"></use>
+										</svg>
+										<!-- <img src="img/icons/icons.svg#arrow-bottom" class="menu__arrow-svg" alt=""> -->
+									</button>
+									<ul class="menu__sub-list">
+										<li class="menu__sub-item">
+											<a href="" class="menu__sub-link">Item1</a>
+										</li>
+										<li class="menu__sub-item">
+											<a href="" class="menu__sub-link">Item2</a>
+										</li>
+										<li class="menu__sub-item">
+											<a href="" class="menu__sub-link">Item3</a>
+										</li>
+										<li class="menu__sub-item">
+											<a href="" class="menu__sub-link">Item4</a>
+										</li>
+										<li class="menu__sub-item">
+											<a href="" class="menu__sub-link">Item5</a>
+										</li>
+									</ul>
 								</li>
 								<li class="menu__item">
 									<a href="" class="menu__link">Отзывы</a>
@@ -95,9 +136,30 @@
 		<div class="header__slider">
 			<div class="swiper header__swiper">
 				<div class="swiper-wrapper">
-					<div class="swiper-slide  header__swiper-slide"><img src="img/sliders/header_slider-1.jpg" alt=""></div>
-					<div class="swiper-slide"><img src="img/sliders/header_slider-2.jpg" alt=""></div>
-					<div class="swiper-slide"><img src="img/sliders/header_slider-3.jpg" alt=""></div>
+					<div class="swiper-slide header__swiper-slide">
+						<img src="img/sliders/header_slider-1.jpg" alt="">
+						<div class="header__swiper-title">Здесь будет титульник</div>
+						<div class="header__swiper-text">
+							<span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis in, earum consequuntur culpa delectus, velit deserunt dolore provident, architecto officiis aut cupiditate a dolor doloremque itaque. Eligendi sapiente nemo at.</span>
+						</div>
+						<div class="header__swiper-button"><a href="#">Подробнее</a></div>
+					</div>
+					<div class="swiper-slide">
+						<img src="img/sliders/header_slider-2.jpg" alt="">
+						<div class="header__swiper-title">Здесь будет титульник</div>
+						<div class="header__swiper-text">
+							<span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis in, earum consequuntur culpa delectus, velit deserunt dolore provident, architecto officiis aut cupiditate a dolor doloremque itaque. Eligendi sapiente nemo at.</span>
+						</div>
+						<div class="header__swiper-button"><a href="#">Подробнее</a></div>
+					</div>
+					<div class="swiper-slide">
+						<img src="img/sliders/header_slider-3.jpg" alt="">
+						<div class="header__swiper-title">Здесь будет титульник</div>
+						<div class="header__swiper-text">
+							<span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis in, earum consequuntur culpa delectus, velit deserunt dolore provident, architecto officiis aut cupiditate a dolor doloremque itaque. Eligendi sapiente nemo at.</span>
+						</div>
+						<div class="header__swiper-button"><a href="#">Подробнее</a></div>
+					</div>
 				</div>
 
 				<div class="swiper-pagination header__swiper-pagination"></div>

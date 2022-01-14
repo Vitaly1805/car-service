@@ -2,7 +2,7 @@ import Swiper, { Navigation, Pagination } from 'swiper';
 Swiper.use([Navigation, Pagination]);
 
 if (document.querySelector('.header__swiper')) {
-  new Swiper('.header__swiper', {
+  const sor = new Swiper('.header__swiper', {
     centeredSlides: true,
     grabCursor: true,
     loop: true,
@@ -18,7 +18,10 @@ if (document.querySelector('.header__swiper')) {
       prevEl: '.swiper-button-prev',
     },
   });
+
+  // setInterval(function () {sor.slideNext();}, 3000);
 }
+
 
 
 
