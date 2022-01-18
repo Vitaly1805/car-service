@@ -2,6 +2,7 @@
 // @import "../../node_modules/swiper/swiper.scss";
 // @import "../../node_modules/swiper/swiper-vars.scss";
 @import "fonts";
+@import "base/iconsfont";
 
 $widthContainer: 1170;
 $fontFamily: "Times New Roman", Georgia, Serif;
@@ -25,6 +26,11 @@ body {
 		margin: 0 auto;
 		padding: 0 15px;
 	}
+
+	img {
+		pointer-events: none;
+		user-select: none;
+	}
 }
 
 .page {
@@ -34,3 +40,4 @@ body {
 @import 'base/svg.scss';
 
 @import "header.scss";
+// @import "footer.scss";
