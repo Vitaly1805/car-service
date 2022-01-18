@@ -1,11 +1,43 @@
+@import "base/swiper-bundle";
+// @import "../../node_modules/swiper/swiper.scss";
+// @import "../../node_modules/swiper/swiper-vars.scss";
 @import "fonts";
+@import "base/iconsfont";
+
+$widthContainer: 1170;
+$fontFamily: "Times New Roman", Georgia, Serif;
+$fontSize: 14px;
+$mainColor: #000000;
+$background: #fff;
+
+// Брейк-поинты
+$pc: $widthContainer + px; // ПК, ноутбуки, некоторые планшеты в горизонтальном положении
+$tablet: 991.98px; // Планшеты, некоторые телефоны в горизонтальном положении
+$mobile: 767.98px; // Телефоны L
+$mobileSmall: 479.98px; // Телефоны S
+
+@import "base/null.scss";
 
 body {
-	font-family: CormorantUpright;
-	font-size: 50px;
-	span {
-		color: red;
+	background: $background;
+
+	._container {
+		max-width: $widthContainer + px;
+		margin: 0 auto;
+		padding: 0 15px;
+	}
+
+	img {
+		pointer-events: none;
+		user-select: none;
 	}
 }
 
+.page {
+	background: blue;
+}
+
 @import 'base/svg.scss';
+
+@import "header.scss";
+// @import "footer.scss";
