@@ -1480,7 +1480,7 @@ body img {
   width: 100%;
 }
 .footer__contact-item {
-  font-size: 14px;
+  font-size: 14px !important;
 }
 .footer__mail-delivery {
   padding: 20px 0;
@@ -1519,7 +1519,7 @@ body img {
 .footer__info-col {
   margin: 0 20px 0 0;
 }
-@media (max-width: 400px) {
+@media (max-width: 450px) {
   .footer__info-col {
     margin: 0;
   }
@@ -1536,7 +1536,7 @@ body img {
 .footer__info-row {
   margin: 0 auto;
 }
-@media (max-width: 400px) {
+@media (max-width: 450px) {
   .footer__info-row {
     flex-direction: column;
   }
