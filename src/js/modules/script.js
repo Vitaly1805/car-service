@@ -26,3 +26,13 @@ window.onload = function () {
         }
     }
 }
+
+document.querySelectorAll('.conteyner a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+ 
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
