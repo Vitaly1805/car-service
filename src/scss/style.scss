@@ -34,7 +34,41 @@ body {
 }
 
 .page {
-	background: blue;
+	&__title {
+		font-size: 24px;
+		font-weight: 600;
+		text-transform: uppercase;
+		text-align: center;
+		margin: 20px 0;
+	}
+
+	&__services {
+		&-list {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
+
+		&-item {
+			font-size: 20px;
+			width: 250px;
+			height: 250px;
+			border-radius: 5px;
+			border: 1px solid #cdcdcd;
+			margin: 0 0 10px 0;
+			transition: all 0.3s ease 0s;
+
+			&:hover {
+				background: #cdcdcd;
+				cursor: pointer;
+			}
+		}
+
+		&-subtitle {
+			text-align: center;
+			margin: 10px 0;
+		}
+	}
 }
 
 .logo {
@@ -64,6 +98,22 @@ body {
 			width: 42px;
 			height: 42px;
 		}
+	}
+}
+
+.arrow-top {
+	top: 90vh;
+	right: 20px;
+	font-size: 40px;
+	color: #fff;
+	background: #5858FA; 
+	position: fixed;
+	padding: 5px 10px;
+	border-radius: 50%;
+	cursor: pointer;
+
+	@media (min-width: $mobile) {
+		
 	}
 }
 

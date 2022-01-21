@@ -760,6 +760,10 @@ button.swiper-pagination-bullet {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-arrow-regular:before {
+  content: "\e91b";
+}
+
 .icon-mail:before {
   content: "\e91a";
 }
@@ -954,8 +958,34 @@ body img {
   user-select: none;
 }
 
-.page {
-  background: blue;
+.page__title {
+  font-size: 24px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 20px 0;
+}
+.page__services-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.page__services-item {
+  font-size: 20px;
+  width: 250px;
+  height: 250px;
+  border-radius: 5px;
+  border: 1px solid #cdcdcd;
+  margin: 0 0 10px 0;
+  transition: all 0.3s ease 0s;
+}
+.page__services-item:hover {
+  background: #cdcdcd;
+  cursor: pointer;
+}
+.page__services-subtitle {
+  text-align: center;
+  margin: 10px 0;
 }
 
 .logo {
@@ -988,6 +1018,17 @@ body img {
   }
 }
 
+.arrow-top {
+  top: 90vh;
+  right: 20px;
+  font-size: 40px;
+  color: #fff;
+  background: #5858FA;
+  position: fixed;
+  padding: 5px 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
 .svg-icon {
   width: 20px;
   height: 20px;

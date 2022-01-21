@@ -25,6 +25,9 @@
     -moz-osx-font-smoothing: grayscale;
   }
   
+  .icon-arrow-regular:before {
+    content: "\e91b";
+  }
   .icon-mail:before {
     content: "\e91a";
   }

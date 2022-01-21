@@ -27,12 +27,22 @@ window.onload = function () {
     }
 }
 
-document.querySelectorAll('.conteyner a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
- 
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
+
+//Якорь сайта
+let anchor = document.querySelector('.arrow-top');
+
+anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+
+    document.documentElement.scrollIntoView({
+        behavior: 'smooth',
     });
 });
+
+document.onscroll = () => {
+    if (document.documentElement.scrollTop > 700 ) {
+        anchor.style.display = "block";
+    } else {
+        anchor.style.display = "none";
+    }
+}; 
