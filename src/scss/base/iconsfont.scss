@@ -25,6 +25,39 @@
     -moz-osx-font-smoothing: grayscale;
   }
   
+  .icon-brake:before {
+    content: "\e91c";
+  }
+  .icon-car-body:before {
+    content: "\e91d";
+  }
+  .icon-diagnostis:before {
+    content: "\e91e";
+  }
+  .icon-electronics:before {
+    content: "\e91f";
+  }
+  .icon-engine:before {
+    content: "\e920";
+  }
+  .icon-fuel:before {
+    content: "\e921";
+  }
+  .icon-maintenance:before {
+    content: "\e922";
+  }
+  .icon-steering:before {
+    content: "\e923";
+  }
+  .icon-suspension:before {
+    content: "\e924";
+  }
+  .icon-transmission:before {
+    content: "\e925";
+  }
+  .icon-exhaust:before {
+    content: "\e926";
+  }
   .icon-arrow-regular:before {
     content: "\e91b";
   }

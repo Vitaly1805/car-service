@@ -20,6 +20,7 @@ $mobileSmall: 479.98px; // Телефоны S
 
 body {
 	background: $background;
+	font-family: sans-serif;
 
 	._container {
 		max-width: $widthContainer + px;
@@ -35,39 +36,100 @@ body {
 
 .page {
 	&__title {
-		font-size: 24px;
+		font-size: 28px;
 		font-weight: 600;
 		text-transform: uppercase;
 		text-align: center;
-		margin: 20px 0;
+		padding: 40px 0;
+	}
+
+	&__icon {
+		font-size: 150px;
+		display: flex;
+		justify-content: center;
+		margin: 20px 0 0 0;
 	}
 
 	&__services {
+		background:  #F3F5F9;
+		padding: 0 0 30px 0;
+
 		&-list {
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: space-between;
+			display: grid;
+			grid-template-columns: repeat(4, 1fr);
+			grid-gap: 20px;
+
+			@media (max-width: 1080px) {
+				grid-template-columns: repeat(3, 1fr);
+			}
+
+			@media (max-width: 820px) {
+				grid-template-columns: repeat(2, 1fr);
+			}
+
+			@media (max-width: 560px) {
+				grid-template-columns: repeat(1, 1fr);
+			}
 		}
 
-		&-item {
+		&-card {
 			font-size: 20px;
 			width: 250px;
+			margin: 0 auto;
 			height: 250px;
 			border-radius: 5px;
-			border: 1px solid #cdcdcd;
-			margin: 0 0 10px 0;
+			border: 1px solid #000;
+			background: #fff;
 			transition: all 0.3s ease 0s;
+			cursor: pointer;
+			padding: 0 10px;
+			line-height: 130%;
+			position: relative;
+
+			@media (max-width: 1080px) {
+				width: 100%;
+			}
 
 			&:hover {
-				background: #cdcdcd;
-				cursor: pointer;
+				color: #5858FA;
+				box-shadow: 0px 0px 8px 5px #5858FA;
+				border: 1px solid #5858FA;
+			}
+
+			.icon-engine {
+				font-size: 200px;
 			}
 		}
 
 		&-subtitle {
 			text-align: center;
 			margin: 10px 0;
+			font-weight: 600;
 		}
+	}
+
+	&__engine {
+		margin: -15px 0 0 0;
+	}
+
+	&__car-body {
+		font-size: 200px;
+		margin: 0 0 0 0;
+	}
+
+	&__fuel {
+		font-size: 140px;
+		top: 55px;
+	}
+
+	&__brake {
+		font-size: 160px;
+		margin: 10px 0 0 0;
+	}
+
+	&__maintenance {
+		font-size: 180px;
+		margin: 10px 0 0 0;
 	}
 }
 
@@ -111,10 +173,6 @@ body {
 	padding: 5px 10px;
 	border-radius: 50%;
 	cursor: pointer;
-
-	@media (min-width: $mobile) {
-		
-	}
 }
 
 @import 'base/svg.scss';
