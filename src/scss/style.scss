@@ -131,6 +131,57 @@ body {
 		font-size: 180px;
 		margin: 10px 0 0 0;
 	}
+
+	&__advantages {
+		color: #fff;
+		background: #8181F7;
+
+		&-list {
+			display: flex;
+			justify-content: space-between;
+
+			@media (max-width: $mobile) {
+				flex-direction: column;
+			}
+		}
+
+		&-icon {
+			font-size: 60px;
+			display: inline-block;
+			border: 1px solid #fff;
+			border-radius: 50%;
+			padding: 20px;
+		}
+
+		&-item {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			width: 23vw;
+
+			@media (min-width: $mobile) {
+				width: calc(30vw + (30 - 23) * ((100vw - 320px) / (1200 - 320)));
+			}
+
+			@media (max-width: $mobile) {
+				width: 320px;
+				margin: 0 auto;
+			}
+		}
+
+		&-subtitle {
+			font-size: 20px;
+			text-align: center;
+			margin: 20px 0 15px 0;
+		}
+
+		&-text {
+			text-align: center;
+			line-height: 130%;
+			font-size: 16px;
+			margin: 0 0 30px 0;
+		}
+	}
 }
 
 .logo {

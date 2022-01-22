@@ -25,6 +25,15 @@
     -moz-osx-font-smoothing: grayscale;
   }
   
+  .icon-reward:before {
+    content: "\e927";
+  }
+  .icon-master:before {
+    content: "\e928";
+  }
+  .icon-cup:before {
+    content: "\e929";
+  }
   .icon-brake:before {
     content: "\e91c";
   }
@@ -39,6 +48,9 @@
   }
   .icon-engine:before {
     content: "\e920";
+  }
+  .icon-exhaust:before {
+    content: "\e92a";
   }
   .icon-fuel:before {
     content: "\e921";
@@ -55,7 +67,7 @@
   .icon-transmission:before {
     content: "\e925";
   }
-  .icon-exhaust:before {
+  .icon-exhaust1:before {
     content: "\e926";
   }
   .icon-arrow-regular:before {
@@ -141,5 +153,8 @@
   }
   .icon-search:before {
     content: "\e912";
+  }
+  .icon-cup1:before {
+    content: "\e92b";
   }
   
